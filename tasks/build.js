@@ -19,8 +19,7 @@ module.exports = function(grunt) {
         dest: "build/"
       },
       vendorjs: {
-        src: ["es6-shim/es6-shim.min.js",
-          "es6-shim/es6-shim.map"],
+        src: ["es6-shim/es6-shim.js"],
         expand: true,
         cwd: "bower_components/",
         dest: "build/vendor/"
@@ -58,7 +57,7 @@ module.exports = function(grunt) {
     },
     sass: {
       options: {
-        sourceMap: true,
+        sourceMap: false,
         outputStyle: "compressed"
       },
       dist: {
